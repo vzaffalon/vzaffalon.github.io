@@ -1,2 +1,1 @@
-# vzaffalon.github.io
-Resume Website
+My personal resume page
