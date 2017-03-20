@@ -194,6 +194,7 @@ hr.small {
 .portfolio {
     padding: 50px 0;
     background: linear-gradient(rgba(255,34,62,0.85) 0%, rgba(228,0,29,0.85) 100%),url(../img/bg2.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .portfolio-item {
