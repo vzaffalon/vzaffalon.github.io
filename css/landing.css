@@ -1,0 +1,11 @@
+.header {
+    height: 90%;
+}
+
+.github-button-margin{
+  margin: 12px;
+}
+
+.bg-primary{
+  background: linear-gradient(rgba(93,30,178,0.85) 0%, rgba(66,21,126,0.85) 100%),url(../img/bg.jpg) no-repeat center;
+}

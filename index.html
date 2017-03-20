@@ -28,6 +28,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="js/app.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/landing.css" rel="stylesheet">
 </head>
@@ -36,11 +43,11 @@
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
+    <nav id="sidebar-wrapper" style="background-color: #ffffff;">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>Menu</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -49,7 +56,7 @@
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="#services" onclick=$("#menu-close").click();>Skills</a>
             </li>
             <li>
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
@@ -62,12 +69,20 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
+      <div id="particles-js" style="z-index=5; position:absolute; width:1500px; height:600px;"></div>
+      <div style="z-index=999;">
+        <div class="github-button-margin">
+          <a class="github-button" href="https://github.com/vzaffalon" data-style="mega" data-count-href="/vzaffalon/followers" data-count-api="/users/vzaffalon#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @vzaffalon on GitHub">Follow @vzaffalon</a>
+        </div>
+      <div class="text-vertical-center">
+          <!-- Place this tag where you want the button to render. -->
             <h1 style="color:#ffffff">Hello, Visitor!</h1>
             <h3 style="color:#ffffff">My Name is Victor Zaffalon.</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Learn more about my work</a>
+            <a href="#about" class="btn btn-dark btn-lg">Learn more about my Work</a>
+            <div style="margin: 0 auto; background-color: #ff223e; height: 5px; width: 90px; margin-top:20px;"></div>
         </div>
+      </div>
     </header>
 
     <!-- About -->
@@ -203,43 +218,40 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>My Portfolio</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
+                    <h2 style="color:#ffffff">Some Projects I Worked On</h2>
+                    <div style="margin: 0 auto; background-color: #ffffff; height: 1px; width: 90px; margin-top:20px;"></div>
+                    <div class="row" style="margin-top: 20px; margin-bottom:20px;">
+                        <div class="col-md-3">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                <a target="_blank" href="https://www.menni.com.br/">
+                                    <img class="img-portfolio img-responsive" src="img/menni.jpg" style="border-radius:4px;">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.runnerbrasilia.runnerbrasiliaprofessores&hl=pt_BR">
+                                    <img class="img-portfolio img-responsive" src="img/runner.jpeg" style="border-radius:4px;">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.yimobile.goodfella2&hl=en">
+                                    <img class="img-portfolio img-responsive" src="img/goodfella.png" style="border-radius:4px;">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                <a target="_blank" href="https://ccambio.com.br/">
+                                    <img class="img-portfolio img-responsive" src="img/capital-cambio.jpg" style="border-radius:4px;">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -249,12 +261,13 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside class="call-to-action bg-primary" style="padding-top:80px; padding-bottom:80px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Download My Written Resume</h3>
-                    <a href="#" class="btn btn-lg btn-light">Get It</a>
+                    <h3>Do you need my written resume?</h3>
+                    <a target="_blank" href="https://drive.google.com/file/d/0B_h8MoSTafRJcVVkenB1d3Jzdms/view?usp=sharing" class="btn btn-lg btn-light">Yes i do!</a>
+                    <a target="_blank" href="http://patorjk.com/games/snake/" class="btn btn-lg btn-light">No i dont!</a>
                 </div>
             </div>
         </div>
@@ -265,29 +278,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Contato</strong>
                     </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <p>Brasília - DF</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-phone fa-fw"></i> (61) 99923-3130</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:zaffalonvictor@gmail.com">zaffalonvictor@gmail.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/victor.zaffalon.9"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="https://github.com/vzaffalon"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://bitbucket.org/vzaffalon/"><i class="fa fa-bitbucket fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; Victor Zaffalon 2017</p>
                 </div>
             </div>
         </div>
