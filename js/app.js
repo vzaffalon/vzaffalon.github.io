@@ -43,11 +43,5 @@ var partJson = {
   },
   "retina_detect": true
 }
-var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
 
-var uri = "https://vzaffalon.github.io/assets/particles.json";
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js',uri, function() {
-  console.log('callback - particles.js config loaded');
-});
+particlesJS("particles-js", partJson);
