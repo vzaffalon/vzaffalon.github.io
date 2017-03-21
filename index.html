@@ -31,7 +31,7 @@
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="js/particles.min.js"></script>
+    <script src="js/particles.js"></script>
 
     <script src="js/app.js"></script>
 
@@ -69,7 +69,7 @@
 
     <!-- Header -->
     <header id="top" class="header">
-      <div id="particles-js" style="z-index=970; position:absolute; width:100%; height:600px;"></div>
+      <div id="particles-js" class="particle-css"></div>
       <div style="z-index=5; position:relative;">
         <div class="github-button-margin">
           <a class="github-button" href="https://github.com/vzaffalon" data-style="mega" data-count-href="/vzaffalon/followers" data-count-api="/users/vzaffalon#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @vzaffalon on GitHub">Follow @vzaffalon</a>
@@ -218,10 +218,10 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-            <div class="row" style="margin-right: 0px; margin-left: 0px;">
+            <div class="row" class="row-fix">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2 style="color:#ffffff">Some Projects I Worked On</h2>
-                    <div style="margin: 0 auto; background-color: #ffffff; height: 1px; width: 90px; margin-top:20px;"></div>
+                    <div class="portfolio-div"></div>
                     <div class="row" style="margin-top: 20px; margin-bottom:20px;">
                         <div class="col-md-3">
                             <div class="portfolio-item">
@@ -261,7 +261,7 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary" style="padding-top:80px; padding-bottom:80px;">
+    <aside class="call-to-action bg-primary bg-action-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
