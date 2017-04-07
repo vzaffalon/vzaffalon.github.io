@@ -23,6 +23,14 @@
   margin-left: 0px;
 }
 
+.text-vertical-center h1{
+  font-size: 6.5em;
+}
+
+.h3, h3{
+  font-size: 28px;
+}
+
 .portfolio-div{
   margin: 0 auto;
   background-color: #ffffff;
